@@ -2,6 +2,13 @@
 /*5️⃣ EJERCICIO 05 5️⃣*/
 
 function esPositivo(num) {
+   if (num < 0){
+      return("Es negativo")
+  } else if (num > 0){
+      return("Es positivo")
+  } else (num = 0);{
+      return false
+  }
    // La función recibe un entero. Devuelve como resultado un string que indica si el número
    // es positivo o negativo.
    // Si el número es positivo ---> "Es positivo".
@@ -11,40 +18,47 @@ function esPositivo(num) {
 }
 
 function agregarSimboloExclamacion(str) {
+    return(str + "!");
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
 }
 
 function combinarNombres(nombre, apellido) {
+   return (nombre+" "+apellido);
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
 }
 
 function obtenerSaludo(nombre) {
+   return ("Hola "+nombre+"!");
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
+   return (alto*ancho);
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
 }
 
 function retornarPerimetro(lado) {
+   return (lado*4);
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
 }
 
 function areaDelTriangulo(base, altura) {
+   return((base*altura)/2);
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
 }
 
 function deEuroAdolar(euro) {
+   return(euro*1.2);
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
@@ -55,6 +69,21 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if ( letra == "a"){
+      return ("Es vocal")
+      } else if( letra == "e"){
+      return ("Es vocal")
+      } else if( letra == "i"){
+      return ("Es vocal")
+      } else if( letra == "o"){
+      return ("Es vocal")
+      } else if( letra == "u"){
+      return ("Es vocal")
+      }else if( letra.length > 1){
+      return ("Dato incorrecto")
+      } else {
+      return ("Dato incorrecto")
+      }
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
